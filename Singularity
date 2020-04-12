@@ -1,6 +1,6 @@
 
 Bootstrap: docker
-From: sghignone/alpine-perl
+From: sghignone/alpine-bioperl:latest
 
 
 %labels
