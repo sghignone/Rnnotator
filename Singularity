@@ -1,7 +1,7 @@
 
 Bootstrap: docker
 From: sghignone/alpine-bioperl:latest
-
+Stage: devel
 
 %labels
 	author Stefano Ghignone
