@@ -11,7 +11,7 @@ following prerequisites must be installed:
 * AMOS (http://sourceforge.net/apps/mediawiki/amos/index.php)
 * Vmatch 2.0 (http://www.vmatch.de/)
 * bwa 0.5.8c (http://bio-bwa.sourceforge.net/) -- DONE
-* MUMmer (http://sourceforge.net/projects/mummer/)
+* MUMmer (http://sourceforge.net/projects/mummer/) -- DONE
 * BioPerl (http://www.bioperl.org) -- base system
 * Perl modules: Parallel::ForkManager, Tree (http://search.cpan.org/) -- DONE
 

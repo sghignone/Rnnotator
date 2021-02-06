@@ -48,17 +48,15 @@ Stage: devel
 	cd ..
 	rm bwa-0.7.17.tar.bz2
 
-#	Installing MUMMER
-#	wget -c https://sourceforge.net/projects/mummer/files/mummer/3.23/MUMmer3.23.tar.gz -P /opt
-#	tar -xzf MUMmer3.23.tar.gz -C /opt
-#	cd MUMmer3.23 && make install
-#	cd .. 
-#	rm MUMmer3.23.tar.gz
-#	ln -s /opt/MUMmer3.23/nucmer /usr/bin/.
-#	ln -s /opt/MUMmer3.23/show-coords /usr/bin/.
-#	ln -s /opt/MUMmer3.23/delta-filter /usr/bin/.
-
-
+	#Installing MUMMER
+	wget -c https://sourceforge.net/projects/mummer/files/mummer/3.23/MUMmer3.23.tar.gz -P /opt
+	tar -xzf MUMmer3.23.tar.gz -C /opt
+	cd MUMmer3.23 && make install
+	cd .. 
+	rm MUMmer3.23.tar.gz
+	ln -s /opt/MUMmer3.23/nucmer /usr/bin/.
+	ln -s /opt/MUMmer3.23/show-coords /usr/bin/.
+	ln -s /opt/MUMmer3.23/delta-filter /usr/bin/.
 
 %environment
-	export PATH=/opt/velvet:/opt/oases:/opt/bwa-0.7.17:$PATH		
+	export PATH=/opt/velvet:/opt/oases:/opt/bwa-0.7.17:/opt/MUMmer3.23:$PATH		
