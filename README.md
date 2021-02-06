@@ -1,4 +1,7 @@
 # Rnnotator
+
+
+
 Rnnotator is an automated software pipeline that generates transcript models by de novo assembly of RNA-Seq data without the need for a reference genome.
 
 Rnnotator must be run on a 64-bit Linux architecture. Before running Rnnotator the
