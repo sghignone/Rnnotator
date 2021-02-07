@@ -60,3 +60,17 @@ Stage: devel
 
 %environment
 	export PATH=/opt/velvet:/opt/oases:/opt/bwa-0.7.17:/opt/MUMmer3.23:$PATH		
+
+%post
+	#Installing AMOS
+	wget -c https://sourceforge.net/projects/amos/files/amos/3.1.0/amos-3.1.0.tar.gz -P /opt
+	tar -xzf amos-3.1.0.tar.gz -C /opt
+#	cd amos-3.1.0 && ./configure  CXXFLAGS="-g -O2 -Wno-narrowing"
+	#The solution is to editsrc/Align/find-tandem.ccFile, add at the beginning#include <getopt.h>	
+	sed -i '1s/^/#include <getopt.h>\n/' amos-3.1.0/src/Align/find-tandem.cc
+	cd amos-3.1.0 && ./configure && make && make install  
+	cd ..
+	rm  amos-3.1.0.tar.gz
+
+%environment
+        export PATH=/opt/amos-3.1.0/bin:$PATH
