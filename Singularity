@@ -58,8 +58,14 @@ Stage: devel
 	ln -s /opt/MUMmer3.23/show-coords /usr/bin/.
 	ln -s /opt/MUMmer3.23/delta-filter /usr/bin/.
 
+	#Installing VMATCH
+	wget -c http://www.vmatch.de/distributions/vmatch-2.3.1-Linux_x86_64-64bit.tar.gz -P /opt
+	tar -xzf vmatch-2.3.1-Linux_x86_64-64bit.tar.gz -C /opt
+	rm vmatch-2.3.1-Linux_x86_64-64bit.tar.gz
+
 %environment
-	export PATH=/opt/velvet:/opt/oases:/opt/bwa-0.7.17:/opt/MUMmer3.23:$PATH		
+	export PATH=/opt/velvet:/opt/velvet/contrib/AssemblyAssembler1.3:/opt/oases:/opt/bwa-0.7.17:/opt/MUMmer3.23:/opt/MUMmer3.23/scripts:/opt/vmatch-2.3.1-Linux_x86_64-64bit:$PATH
+	export LD_LIBRARY_PATH=/opt/vmatch-2.3.1-Linux_x86_64-64bit/SELECT:$PATH	
 
 %post
 	#Installing AMOS

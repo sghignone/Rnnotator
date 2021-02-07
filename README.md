@@ -9,7 +9,7 @@ following prerequisites must be installed:
 * Blat v. 34 (http://genome.ucsc.edu/FAQ/FAQblat.html#blat3) -- DONE
 * Velvet 1.0.15 (http://www.ebi.ac.uk/~zerbino/velvet/) -- DONE
 * AMOS (http://sourceforge.net/apps/mediawiki/amos/index.php) -- DONE
-* Vmatch 2.0 (http://www.vmatch.de/)
+* Vmatch 2.0 (http://www.vmatch.de/) -- DONE
 * bwa 0.5.8c (http://bio-bwa.sourceforge.net/) -- DONE
 * MUMmer (http://sourceforge.net/projects/mummer/) -- DONE
 * BioPerl (http://www.bioperl.org) -- base system
